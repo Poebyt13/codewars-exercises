@@ -7,8 +7,7 @@ You should not remove or add elements from/to the array.
 */
 
 function twoSort(s) {
-    let res = s.sort()[0].split('').map(e => e + '***').join('')
-    return res.slice(0, res.length - 3)
+    return s.sort()[0].split('').join('***')
 }
 
 //console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]))
